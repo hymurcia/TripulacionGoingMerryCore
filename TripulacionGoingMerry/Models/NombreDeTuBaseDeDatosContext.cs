@@ -20,11 +20,11 @@ public partial class NombreDeTuBaseDeDatosContext : DbContext
     //public virtual DbSet<MigrationHistory> MigrationHistories { get; set; }
 
     public virtual DbSet<Tripulant> Tripulants { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    /*
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Database=NombreDeTuBaseDeDatos;Trusted_Connection=True;");
-
+        => optionsBuilder.UseSqlServer("Server=NombreDeTuBaseDeDatos.mssql.somee.com; Database=NombreDeTuBaseDeDatos;user id=himel97004_SQLLogin_1; pwd=afziaswhb9;Trusted_Connection=True;");
+ */
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Enrollment>(entity =>
